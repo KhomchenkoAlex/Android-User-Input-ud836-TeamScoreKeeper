@@ -11,7 +11,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
         android:orientation="horizontal"
         android:layout_gravity="center_horizontal">
 
@@ -59,7 +58,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:gravity="center"
-            android:textSize="32sp"
+            android:textSize="48sp"
             android:textStyle="bold"
             android:text="0"/>
 
@@ -80,7 +79,7 @@
             android:gravity="center"
             android:layout_weight="2"
             android:textStyle="bold"
-            android:textSize="32sp"
+            android:textSize="48sp"
             android:text="0"/>
 
     </LinearLayout>
@@ -88,38 +87,42 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:baselineAligned="false">
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:paddingTop="48dp"
-            android:paddingBottom="48dp"
-            android:background="#5C6BC0"
+            android:layout_marginTop="24dp"
             android:orientation="vertical">
 
             <Button
                 android:id="@+id/firstTeamThreePointsButton"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginLeft="24dp"
                 android:text="@string/threePointsLabel"
                 android:onClick="addThreePoints"/>
 
             <Button
                 android:id="@+id/firstTeamTwoPointsButton"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginLeft="24dp"
                 android:text="@string/twoPointsLabel"
                 android:onClick="addTwoPoints"/>
 
             <Button
                 android:id="@+id/firstTeamOnePointButton"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="24dp"
+                android:layout_marginLeft="24dp"
                 android:text="@string/onePointLabel"
                 android:onClick="addOnePoint"/>
 
@@ -129,29 +132,32 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:paddingTop="48dp"
-            android:paddingBottom="48dp"
-            android:background="#42A5F5"
+            android:layout_marginTop="24dp"
             android:orientation="vertical">
 
             <Button
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginLeft="24dp"
                 android:text="@string/threePointsLabel"
                 android:onClick="addThreePointsB"/>
 
             <Button
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginLeft="24dp"
                 android:text="@string/twoPointsLabel"
                 android:onClick="addTwoPointsB"/>
 
             <Button
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="24dp"
+                android:layout_marginLeft="24dp"
                 android:text="@string/onePointLabel"
                 android:onClick="addOnePointB"/>
 
@@ -162,10 +168,10 @@
         android:id="@+id/resetButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_gravity="center_horizontal"
-        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="64dp"
+        android:onClick="resetScore"
         android:text="@string/reset"
-        android:onClick="resetScore"/>
+        android:textSize="24sp" />
 
 </LinearLayout>
